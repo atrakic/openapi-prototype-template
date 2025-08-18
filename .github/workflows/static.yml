@@ -38,7 +38,7 @@ jobs:
           mkdir -p _site
           python3 ./scripts/build.py \
             --action genswaggerui \
-            -u https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/main/openapi.yaml \
+            -u https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/main/openapi/callbacks.yaml \
             -o ./_site/index.html
 
       - name: Upload artifact
